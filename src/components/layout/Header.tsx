@@ -78,7 +78,7 @@ export const Header = () => {
                     Login
                   </Button>
                 </Link>
-                <Link href="/auth/signup">
+                <Link href="/signup">
                   <Button size="sm">Sign Up</Button>
                 </Link>
               </>
