@@ -49,10 +49,10 @@ export function LivePreview({
   const gradientCSS = generateGradientCSS(theme.backgroundGradient);
 
   return (
-    <div className="w-full h-full flex items-center justify-center p-4 overflow-auto">
+    <div className="w-full h-[90vh] flex items-center justify-center p-4 overflow-auto">
       {/* Phone Frame */}
       <div
-        className="relative w-80 rounded-[2.5rem] bg-black p-3 shadow-2xl"
+        className="relative w-80 rounded-[2.5rem] bg-black p-3 shadow-2xl h-full"
         style={{ aspectRatio: "9/19.5" }}
       >
         {/* Notch */}
@@ -114,7 +114,11 @@ export function LivePreview({
                   .map((link) => (
                     <button
                       key={link.id}
-                      className={`px-3 py-2 text-center font-medium text-xs transition ${buttonShapeClass[theme.buttonStyle.shape]} ${buttonFillClass[theme.buttonStyle.fill]} ${buttonShadowClass[theme.buttonStyle.shadow]}`}
+                      className={`px-3 py-2 text-center font-medium text-xs transition ${
+                        buttonShapeClass[theme.buttonStyle.shape]
+                      } ${buttonFillClass[theme.buttonStyle.fill]} ${
+                        buttonShadowClass[theme.buttonStyle.shadow]
+                      }`}
                       style={{
                         backgroundColor:
                           theme.buttonStyle.fill === "solid"
