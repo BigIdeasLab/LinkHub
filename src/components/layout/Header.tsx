@@ -148,7 +148,7 @@ export const Header = () => {
                         Login
                       </Button>
                     </Link>
-                    <Link href="/auth/signup" onClick={() => setIsOpen(false)}>
+                    <Link href="/signup" onClick={() => setIsOpen(false)}>
                       <Button size="sm" className="w-full">
                         Sign Up
                       </Button>
