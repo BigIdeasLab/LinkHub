@@ -99,7 +99,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         },
       });
 
-      let userWithOnboarded = { ...data.user, onboarded: false };
+      let userWithOnboarded = { ...data, onboarded: false };
       if (profileResponse.ok) {
         const profile = await profileResponse.json();
         userWithOnboarded.onboarded = profile.onboarded || false;
@@ -141,7 +141,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         },
       });
 
-      let userWithOnboarded = { ...data.user, onboarded: false };
+      let userWithOnboarded = { ...data, onboarded: false };
       if (profileResponse.ok) {
         const profile = await profileResponse.json();
         userWithOnboarded.onboarded = profile.onboarded || false;
